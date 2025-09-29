@@ -1,25 +1,19 @@
 """
-Page Objects Package for D2L Playwright Tests
+Page Objects Package for Practice Automation Tests
 
-This package contains all Page Object Model classes for D2L testing.
+This package contains all Page Object Model classes for practice automation.
 
 Available Page Objects:
 - BasePage: Base class with common functionality
-- LoginPage: Login page interactions
-- DashboardPage: Dashboard/home page interactions  
-- NavigationPage: Navigation elements and actions
-- CoursePage: Course-specific functionality
+- PracticeLoginPage: Practice site login interactions
+- PracticeExceptionsPage: Practice site exception handling
 """
 
 from .base_page import BasePage
-from .login_page import LoginPage, DashboardPage
-from .navigation_page import NavigationPage
-from .course_page import CoursePage
+from .practice_pages import PracticeLoginPage, PracticeExceptionsPage
 
 __all__ = [
     'BasePage',
-    'LoginPage', 
-    'DashboardPage',
-    'NavigationPage',
-    'CoursePage'
+    'PracticeLoginPage', 
+    'PracticeExceptionsPage'
 ]

@@ -65,6 +65,10 @@ class Config:
         """Get The Internet credentials"""
         return (self.THE_INTERNET_CREDENTIALS['username'],
                self.THE_INTERNET_CREDENTIALS['password'])
+    
+    def get_login_url(self):
+        """Get login URL for practice automation"""
+        return self.PRACTICE_LOGIN_URL
 
 # Global config instance
 config = Config()

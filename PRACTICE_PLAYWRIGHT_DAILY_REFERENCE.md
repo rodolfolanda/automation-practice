@@ -118,7 +118,7 @@ which python  # Should show path with /venv/bin/python
 ./run_tests.sh tests/test_login_pom.py::test_successful_login_with_pom -v --headed
 
 # 🚀 Run comprehensive tests
-./run_tests.sh tests/test_d2l_pom_comprehensive.py -v --headed
+./run_tests.sh tests/test_practice_sites.py -v --headed
 ```
 
 #### 1b. **Manual Commands (if needed)**
@@ -374,7 +374,7 @@ print(f"Found {len(elements)} elements")
 # Use more specific selectors
 # Bad: "button"
 # Good: "button:has-text('Log In')"
-# Better: "button.d2l-button:has-text('Log In')"
+# Better: "button.submit-button:has-text('Log In')"
 ```
 
 #### 2. **Timing Issues (Most Common)**

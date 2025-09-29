@@ -102,15 +102,15 @@ class TestPracticeExceptions:
         # Enter text in new row
         exceptions_page.enter_text_in_second_row("Practice Text")
         
-        # Delete the row
-        exceptions_page.click_delete_button()
+        # Remove the row
+        exceptions_page.click_remove_button()
         
         # Wait for confirmation
         exceptions_page.wait_for_confirmation()
         
         # Verify confirmation message
         confirmation = exceptions_page.get_confirmation_message()
-        assert "Row 2 was deleted" in confirmation
+        assert "Row 2 was removed" in confirmation
         
     def test_exception_handling_no_such_element(self, page: Page):
         """Practice: Handle NoSuchElementException"""

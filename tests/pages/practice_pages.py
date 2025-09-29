@@ -69,10 +69,11 @@ class PracticeExceptionsPage(BasePage):
         super().__init__(page)
         self.base_url = "https://practicetestautomation.com"
         
-        # Exception page selectors
+        # Exception page selectors - Fixed based on actual page structure
         self.add_button = "#add_btn"
-        self.delete_button = "#delete_btn" 
-        self.row2_input = "input[id='row2']"
+        self.remove_button = "#row2 #remove_btn"  # Remove button appears in row2
+        self.row2_div = "#row2"  # The row2 div container
+        self.row2_input = "#row2 input.input-field"  # Input inside row2 div
         self.confirmation_message = "#confirmation"
         
     def navigate_to_exceptions(self):
@@ -85,17 +86,17 @@ class PracticeExceptionsPage(BasePage):
         """Click the Add button to add new row"""
         self.click_element(self.add_button)
         
-    def wait_for_second_row(self, timeout=5000):
-        """Wait for second row to appear"""
-        self.page.wait_for_selector(self.row2_input, timeout=timeout)
+    def wait_for_second_row(self, timeout=10000):
+        """Wait for second row to appear - increased timeout as it takes ~5 seconds"""
+        self.page.wait_for_selector(self.row2_div, timeout=timeout)
         
     def enter_text_in_second_row(self, text):
         """Enter text in the second row input field"""
         self.fill_field(self.row2_input, text)
         
-    def click_delete_button(self):
-        """Click the Delete button"""
-        self.click_element(self.delete_button)
+    def click_remove_button(self):
+        """Click the Remove button"""
+        self.click_element(self.remove_button)
         
     def wait_for_confirmation(self, timeout=5000):
         """Wait for confirmation message to appear"""
@@ -107,4 +108,4 @@ class PracticeExceptionsPage(BasePage):
         
     def is_second_row_visible(self):
         """Check if second row is visible"""
-        return self.is_element_visible(self.row2_input)
+        return self.is_element_visible(self.row2_div)

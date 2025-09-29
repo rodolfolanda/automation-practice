@@ -1,5 +1,5 @@
 #!/bin/bash
-# D2L Playwright Test Runner
+# Playwright Practice Test Runner
 # Convenience script to run tests with proper PYTHONPATH
 
 # Set the project directory
