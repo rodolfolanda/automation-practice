@@ -11,6 +11,16 @@ This project provides hands-on learning for Playwright automation using safe pra
 - **Real-world patterns** without sensitive data or credentials
 - **Progressive learning** from basic to advanced automation techniques
 
+## 🤖 Development Approach
+
+This project showcases **AI-Assisted Learning and Development**:
+
+- **100% AI-Generated Code**: All Python and Playwright automation code written by GitHub Copilot (Claude Sonnet 4)
+- **Prompt Engineering Learning**: Demonstrates effective prompt engineering techniques for learning Python and Playwright automation
+- **Educational Philosophy**: Learning through intelligent collaboration between human guidance and AI code generation
+
+This approach allows rapid skill acquisition by focusing on **understanding automation concepts** and **effective communication with AI tools**, rather than syntax memorization.
+
 ## 🚀 Quick Start
 
 ### 1. Clone and Setup
