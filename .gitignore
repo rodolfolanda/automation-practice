@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Environment Variables (CRITICAL - NEVER COMMIT THESE)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Credentials and secrets
+secrets.json
+credentials.json
+config/secrets.py
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Screenshots and videos
+screenshots/
+videos/
+
+# Debug and development scripts
+debug_scripts/

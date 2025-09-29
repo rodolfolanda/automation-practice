@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.defaultLanguage": "markdown",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-playwright.playwright",
+      "alefragnani.bookmarks"
+    ]
+  }
+}

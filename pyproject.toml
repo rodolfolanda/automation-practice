@@ -1,0 +1,17 @@
+[tool.pytest.ini_options]
+# Pytest configuration for Playwright
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+# Playwright specific settings
+addopts = [
+    "--browser=chromium",
+    # "--headed",  # Uncomment to run in headed mode to see the browser
+    "--video=retain-on-failure",
+    "--screenshot=only-on-failure"
+]
+
+# Async support
+asyncio_mode = "auto"
